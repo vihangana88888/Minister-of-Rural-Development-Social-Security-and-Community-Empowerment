@@ -17,13 +17,16 @@ const navItems = [
   { label: "Product", path: "#" },
   { label: "Download", path: "#" },
   { label: "News", path: "#" },
-  { label: "Contact Us", path: "#" },
+  { label: "Contact Us", path: "/ContactUs" },
+
+  
 ];
 
 const accessibilityIcons = [
   { icon: "bi bi-universal-access", title: "Accessibility" },
   { icon: "bi bi-translate", title: "Language" },
 ];
+
 
 const Header = () => {
   return (

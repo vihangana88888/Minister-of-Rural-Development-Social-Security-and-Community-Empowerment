@@ -53,24 +53,36 @@ const Home = () => {
         </div>
       </main>
 
-      {/* New Section Below Carousel */}
-      <section className="bg-white py-16 px-6 md:px-20 text-center">
-        <h2 className="text-3xl font-bold text-[#9A3F3F] mb-4 uppercase">
-          A Strong Household Economy
-        </h2>
-        <p className="text-sm uppercase text-gray-600 mb-2">
-          576 Production Villages Based on Rural Resources
-        </p>
-        <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-6">
-          The Saubagya Production Village Program was launched to promote home-based products, raise the income level of the rural community, uplift the rural economy, and support the "Vision of Prosperity and Splendour" National Policy Framework.
-        </p>
-        <a
-          href="/about-us#services"
-          className="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
-        >
-          READ MORE →
-        </a>
-      </section>
+      <section className="bg-white py-16 px-6 md:px-20 flex flex-col lg:flex-row items-center justify-between gap-10">
+  {/* Left Side: Image */}
+  <div className="w-full lg:w-1/2">
+    <img
+      src={require("../assets/homepage/image 1.jpeg")} // Replace with your actual image path
+      alt="EDB eMarketplace"
+      className="rounded-lg shadow-lg w-full object-cover"
+    />
+  </div>
+
+  {/* Right Side: Text Content */}
+  <div className="w-full lg:w-1/2 text-left">
+    <h2 className="text-3xl font-bold text-[#333333] mb-4 uppercase">
+    About Ministy of Rural Development
+    </h2>
+    <p className="text-sm uppercase text-gray-600 mb-2">
+      576 Production Villages Based on Rural Resources
+    </p>
+    <p className="text-base text-gray-700 leading-relaxed mb-6">
+      The Saubagya Production Village Program was launched to promote home-based products, raise the income level of the rural community, uplift the rural economy, and support the "Vision of Prosperity and Splendour" National Policy Framework.
+    </p>
+    <a
+      href="/AboutUs"
+      className="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
+    >
+      READ MORE →
+    </a>
+  </div>
+</section>
+
 
       {/* New Section Below Carousel */}
       <section className="bg-white py-16 px-6 md:px-20 text-center">
@@ -129,8 +141,9 @@ const Home = () => {
         </a>
       </section>
 
-      
+      <footer/>
     </div>
+
   );
 };
 

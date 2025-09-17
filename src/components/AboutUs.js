@@ -84,8 +84,7 @@ const AboutUs = () => {
 
       <main className="max-w-5xl mx-auto px-6 py-10 space-y-16">
         {/* Page Title */}
-        <h1 className="text-4xl font-bold text-center text-[#9A3F3F]">About Us</h1>
-
+        <h1 className="text-4xl font-bold  text-[#9A3F3F] text-center mb-6 font-serif ]">About Us</h1>
         {/* Introduction Section */}
         <section id="introduction">
           <h2 className="text-2xl font-bold text-orange-600 mb-2">Introduction</h2>
