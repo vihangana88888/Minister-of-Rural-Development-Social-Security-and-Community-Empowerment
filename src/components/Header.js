@@ -16,7 +16,7 @@ const navItems = [
   { label: "Services", path: "#" },
   { label: "Product", path: "#" },
   { label: "Download", path: "#" },
-  { label: "News", path: "#" },
+  { label: "News", path: "/News" },
   { label: "Contact Us", path: "/ContactUs" },
 
   

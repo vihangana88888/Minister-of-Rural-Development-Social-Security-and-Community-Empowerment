@@ -58,7 +58,7 @@ const ContactUs = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="bg-[#FFF8F6] p-20 rounded-lg shadow-md border-l-4 border-orange-500">
+          <div className="bg-[#FFF8F6] p-20 rounded-lg shadow-md border-l-4 " style={{ borderColor: "#9A3F3F" }}>
             <h2 className="text-4xl font-bold   mb-8">Meet Us</h2>
             <div className="space-y-4 text-gray-700">
               <div>
