@@ -6,6 +6,8 @@ import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
 import Footer from "./components/Footer";
 import News from "./components/News";
+import Download from "./components/Download";
+import Product from "./components/Products";
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/News" element={<News />} />
+        <Route path="/Product" element={<Product />} />
+        <Route path="/Download" element={<Download/>} />
 
       </Routes>
       <Footer />

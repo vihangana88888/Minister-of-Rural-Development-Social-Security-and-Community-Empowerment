@@ -14,8 +14,17 @@ const navItems = [
     ],
   },
   { label: "Services", path: "#" },
-  { label: "Product", path: "#" },
-  { label: "Download", path: "#" },
+  { label: "Product", path: "/Product" },
+  { 
+    label: "Download", 
+    path: "/Download",
+    subItems: [
+      { label: "Serculars", anchor: "#Serculars" },
+      { label: "Guidlines", anchor: "#Guidlines" },
+      { label: "Formats", anchor: "#Formats" },
+    ],
+
+   },
   { label: "News", path: "/News" },
   { label: "Contact Us", path: "/ContactUs" },
 
