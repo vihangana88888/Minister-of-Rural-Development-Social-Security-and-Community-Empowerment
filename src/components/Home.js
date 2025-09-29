@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
-import Header from "./Header";
+
 
 // Import your images
-import image1 from "../assets/homepage/image 1.jpeg";
-import image2 from "../assets/homepage/image 2.jpeg";
-import image3 from "../assets/homepage/image 3.jpeg";
-import image4 from "../assets/homepage/image 4.jpeg";
-import image5 from "../assets/homepage/image 5.jpeg";
+import image1 from "../assets/homepage/imageai1.jpeg";
+import image2 from "../assets/homepage/imageai2.jpeg";
+import image3 from "../assets/homepage/imageai3.jpeg";
+import image4 from "../assets/homepage/imageai4.jpeg";
+//import image5 from "../assets/homepage/imageai5.jpeg";
+import image6 from "../assets/homepage/imageai6.jpeg";
 
-const images = [image1, image2, image3, image4, image5];
+const images = [image1, image2, image3, image4, image6];
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,11 +23,11 @@ const Home = () => {
 
   return (
     <div className="w-screen overflow-hidden">
-     
-
       {/* Carousel Section */}
-      <main className="w-full h-screen relative flex flex-col justify-center items-center">
-        <div className="absolute top-0 left-0 w-full h-full z-0">
+      <main className="w-full h-[650px] relative flex flex-col justify-center items-center">
+        
+        {/* Background Images */}
+        <div className="absolute top-5 left-0 w-full h-full z-0">
           {images.map((img, index) => (
             <img
               key={index}
@@ -38,62 +39,169 @@ const Home = () => {
             />
           ))}
         </div>
-
-        {/* Navigation Dots */}
-        <div className="absolute bottom-6 left-0 w-full z-10 flex justify-center gap-2">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full ${
-                index === currentIndex ? "bg-orange-500" : "bg-gray-300"
-              }`}
-            />
-          ))}
-        </div>
+  
+        {/* Overlay Boxes */}
+        <div className="absolute top-[600px] z-10 flex flex-col md:flex-row justify-center items-center gap-6 px-4 w-[900px]  mx-auto">
+        {[
+            {
+            title: "Rural Development Programme",
+            subtitle: "",
+            },
+            {
+            title: "Grama Shakthi Programme",
+            subtitle: "",
+            },
+            {
+            title: "Praja Shakthi Programme",
+            subtitle: "",
+            },
+            {
+                title: "Sawbagya Programme",
+                subtitle: "",
+                },
+        ].map((box, index) => (
+            <div
+            key={index}
+            className={`bg-white rounded-lg shadow-lg border-t-[6px] border-[#F3931D] h-[200px] w-[300px] flex flex-col items-center text-center hover:scale-105 transform transition-transform duration-300 slide-in-left`}
+            style={{ animationDelay: `${index * 0.3}s` }}
+            >
+            <div className="p-4">
+                <p className="text-lg font-semibold">{box.title}</p>
+                <p className="text-2xl font-bold">{box.subtitle}</p>
+            </div>
+        
+            </div>
+        ))}
+        </div>  
       </main>
+   
+ 
+  
 
-      <section className="bg-white py-16 px-6 md:px-20 flex flex-col lg:flex-row items-center justify-between gap-10">
-  {/* Left Side: Image */}
-  <div className="w-full lg:w-1/2">
-    <img
-      src={require("../assets/homepage/image 1.jpeg")} // Replace with your actual image path
-      alt="EDB eMarketplace"
-      className="rounded-lg shadow-lg w-full object-cover"
-    />
-  </div>
+    {/*About Section*/}
+    <section className="bg-white py-16 px-6 md:px-20">
+        <div className="w-full text-center mt-[200px] gap-10">
+            <h2 className="text-3xl font-bold text-[#F3931D] mb-6 uppercase gap-300 ">
+                About Ministry of Rural Development
+            </h2>
+        </div>
+            <div className="max-w-9xl mx-auto flex flex-col items-center gap-10">
+                
+                {/* Officer Cards in One Row */}
+                <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-6">
+                {[
+                    {
+                    title: "President",
+                    name: "Hon. Anura Kumara Dissanayake",
+                    image: require("../assets/officers/president.jpeg"),
+                    },
+                    {
+                    title: "Minister",
+                    name: "Mr.Upali Pannilage",
+                    image: require("../assets/officers/minister.jpg"),
+                    },
+                    {
+                    title: "Secretary",
+                    name: "Mr. S. Alokabandara",
+                    image: require("../assets/officers/secetry.jpg"),
+                    },
+                ].map((officer, index) => (
+                    <div
+                    key={index}
+                    className="flex items-center gap-4 bg-[#F9F9F9] p-4 rounded-lg shadow-md hover:scale-105 transition-transform duration-300 w-full lg:w-1/3"
+                    >
+                    {/* Circle Image */}
+                    <img
+                        src= {officer.image}
+                        alt={officer.title}
+                        className="w-40 h-40 rounded-full object-cover "/>
 
-  {/* Right Side: Text Content */}
-  <div className="w-full lg:w-1/2 text-left">
-    <h2 className="text-3xl font-bold text-[#333333] mb-4 uppercase">
-    About Ministy of Rural Development
-    </h2>
-    <p className="text-sm uppercase text-gray-600 mb-2">
-      576 Production Villages Based on Rural Resources
-    </p>
-    <p className="text-base text-gray-700 leading-relaxed mb-6">
-      The Saubagya Production Village Program was launched to promote home-based products, raise the income level of the rural community, uplift the rural economy, and support the "Vision of Prosperity and Splendour" National Policy Framework.
-    </p>
-    <a
-      href="/AboutUs"
-      className="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
-    >
-      READ MORE →
-    </a>
-  </div>
-</section>
+                    {/* Rectangle Text Block */}
+                    <div className="w-50 h-500 pl-4 h-36 justify-center">
+                    <p className="text-sm font-semibold text-gray-600 uppercase">
+                        {officer.title}
+                        </p>
+                        <p className="text-base font-bold text-gray-800">
+                        {officer.name}
+                        </p>
+                    </div>
+                    </div>
+                ))}
+                </div>
+
+                
+                {/* Bottom: Text Content */}
+                <div className="w-full text-center mt-10">
+                    <p className="text-sm uppercase text-gray-600 mb-2">
+                        576 Production Villages Based on Rural Resources
+                    </p>
+                    <p className="text-base text-gray-700 leading-relaxed max-w-4xl mx-auto mb-6">
+                        The Saubagya Production Village Program was launched to promote home-based products, raise the income
+                        level of the rural community, uplift the rural economy, and support the "Vision of Prosperity
+                        and Splendour" National Policy Framework.
+                    </p>
+                    <a
+                        href="/AboutUs#services"
+                        className="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
+                    >
+                        OFFICER DETAIL →
+                    </a>
+                </div>
+            </div>
+    </section>
+
+
+
+
+
 
 
       {/* New Section Below Carousel */}
-      <section className="bg-white py-16 px-6 md:px-20 text-center">
-        <h2 className="text-3xl font-bold text-[#9A3F3F] mb-4 uppercase">
+    <section className="bg-[#EEEEEE] py-16 px-6 md:px-20">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+            {/* Left: Text Content */}
+            <div className="md:w-1/2 text-left">
+                <h2 className="text-3xl font-bold text-[#F3931D] mb-4 uppercase">
+                    Product
+                </h2>
+                <p className="text-sm uppercase text-gray-600 mb-2">
+                    576 Production Villages Based on Rural Resources
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    The Saubagya Production Village Program was launched to promote home-based products, raise the income level of the rural community, uplift the rural economy, and support the "Vision of Prosperity and Splendour" National Policy Framework.
+                </p>
+                <a
+                    href="/about-us#services"
+                    className="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
+                >
+                    READ MORE →
+                </a>
+            </div>
+
+            {/* Right: Image */}
+            <div className="md:w-1/2">
+                <img
+                    src={require("../assets/homepage/image 1.jpeg")}// ✅ Replace with your actual image path
+                    alt="Pottery making in rural village"
+                    className="w-full h-auto rounded-lg shadow-md object-cover"
+                />
+            </div>
+        </div>
+    </section>
+
+
+      {/* New Section Below Carousel */}
+    <section className="bg-white py-16 px-6 md:px-20 text-center">
+        <h2 className="text-3xl font-bold text-[#F3931D] mb-4 uppercase">
           A Strong Household Economy
         </h2>
         <p className="text-sm uppercase text-gray-600 mb-2">
           576 Production Villages Based on Rural Resources
         </p>
         <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-6">
-          The Saubagya Production Village Program was launched to promote home-based products, raise the income level of the rural community, uplift the rural economy, and support the "Vision of Prosperity and Splendour" National Policy Framework.
+          The Saubagya Production Village Program was launched to promote home-based products, raise the income level of the rural community,
+           uplift the rural economy, and support the "Vision of Prosperity and Splendour"
+            National Policy Framework.
         </p>
         <a
           href="/about-us#services"
@@ -103,80 +211,61 @@ const Home = () => {
         </a>
       </section>
 
-      {/* New Section Below Carousel */}
-      <section className="bg-white py-16 px-6 md:px-20 text-center">
-        <h2 className="text-3xl font-bold text-[#9A3F3F] mb-4 uppercase">
-          A Strong Household Economy
+      <section className="bg-[#EEEEEE] py-16 px-6 md:px-20">
+        <h2 className="text-3xl font-bold text-center text-[#F3931D] mb-10 uppercase relative">
+            <span className="px-4 bg-white z-10 relative">Related Organizations</span>
+            <div className="absolute left-0 right-0 top-1/2 border-t border-black z-0"></div>
         </h2>
-        <p className="text-sm uppercase text-gray-600 mb-2">
-          576 Production Villages Based on Rural Resources
-        </p>
-        <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-6">
-          The Saubagya Production Village Program was launched to promote home-based products, raise the income level of the rural community, uplift the rural economy, and support the "Vision of Prosperity and Splendour" National Policy Framework.
-        </p>
-        <a
-          href="/about-us#services"
-          className="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
-        >
-          READ MORE →
-        </a>
-      </section>
 
-      <section className="bg-white py-16 px-6 md:px-20">
-  <h2 className="text-3xl font-bold text-center text-[#9A3F3F] mb-10 uppercase relative">
-    <span className="px-4 bg-white z-10 relative">Related Organizations</span>
-    <div className="absolute left-0 right-0 top-1/2 border-t border-gray-300 z-0"></div>
-  </h2>
-
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-    {[
-      {
-        name: " ⁠Rural Development and Research Institute",
-        logo: require("../assets/logo 2.png"), // Replace with actual logo
-        link: "https://stateminsamurdhi.gov.lk/web/index.php?option=com_content&view=article&id=48&Itemid=184&lang=en",
-      },
-      {
-        name: "⁠Ministry of Public Administration",
-        logo: require("../assets/logo 2.png"),
-        link: "https://pubad.gov.lk/",
-      },
-      {
-        name: "⁠Ministry of Home Affaires",
-        logo: require("../assets/logo 2.png"),
-        link: "https://www.moha.gov.lk/",
-      },
-      {
-        name: "⁠Ministry of Finance",
-        logo: require("../assets/logo 2.png"),
-        link: "https://www.treasury.gov.lk/",
-      },
-      {
-        name: " ⁠Export Development Board",
-        logo: require("../assets/logo 2.png"),
-        link: "https://www.srilankabusiness.com/",
-      },
-    ].map((org, index) => (
-      <a
-        key={index}
-        href={org.link}
-        className="group bg-white border-b-4 border-[#9A3F3F] rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition duration-300 hover:-translate-y-2 hover:shadow-lg"
-      >
-        <img
-          src={org.logo}
-          alt={org.name}
-          className="w-20 h-20 object-contain mb-4 transition duration-300 group-hover:scale-105"
-        />
-        <h3 className="text-sm font-semibold text-gray-800 group-hover:text-[#9A3F3F]">
-          {org.name}
-        </h3>
-      </a>
-    ))}
-  </div>
-</section>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+            {
+                name: " ⁠Rural Development and Research Institute",
+                logo: require("../assets/logo 2.png"), // Replace with actual logo
+                link: "https://stateminsamurdhi.gov.lk/web/index.php?option=com_content&view=article&id=48&Itemid=184&lang=en",
+            },
+            {
+                name: "⁠Ministry of Public Administration",
+                logo: require("../assets/logo 2.png"),
+                link: "https://pubad.gov.lk/",
+            },
+            {
+                name: "⁠Ministry of Home Affaires",
+                logo: require("../assets/logo 2.png"),
+                link: "https://www.moha.gov.lk/",
+            },
+            {
+                name: "⁠Ministry of Finance",
+                logo: require("../assets/logo 2.png"),
+                link: "https://www.treasury.gov.lk/",
+            },
+            {
+                name: " ⁠Export Development Board",
+                logo: require("../assets/logo 2.png"),
+                link: "https://www.srilankabusiness.com/",
+            },
+            ].map((org, index) => (
+            <a
+                key={index}
+                href={org.link}
+                className="group bg-white border-b-4 border-[#F3931D] rounded-lg shadow-md p-6 flex flex-col items-center text-center transform transition duration-300 hover:-translate-y-2 hover:shadow-lg"
+            >
+                <img
+                src={org.logo}
+                alt={org.name}
+                className="w-20 h-20 object-contain mb-4 transition duration-300 group-hover:scale-105"
+                />
+                <h3 className="text-sm font-semibold text-gray-800 group-hover:text-[#9A3F3F]">
+                {org.name}
+                </h3>
+            </a>
+            ))}
+        </div>
+    </section>
 
     </div>
 
-  );
+);
 };
 
 export default Home;

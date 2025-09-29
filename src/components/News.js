@@ -18,7 +18,7 @@ const News = () => {
       
 
       <main className="max-w-7xl mx-auto px-6 py-10 space-y-12">
-        <h1 className="text-4xl font-serif italic font-bold text-[#333]">Updates</h1>
+      <h1 className="text-4xl font-bold text-center mb-6 font-serif text-[#F3931D]">News</h1>
 
         <div className="w-full rounded-lg overflow-hidden border-2" style={{ borderColor: "#9A3F3F" }}>
         <img

@@ -20,19 +20,19 @@ const Footer = () => {
           <div className="space-y-2 text-sm">
             <p>
               <i className="bi bi-geo-alt-fill text-yellow-500 mr-2"></i>
-              1st Floor, Sethsiripaya (Stage III), Battaramulla, Sri Lanka
+              9th Floor, Sethsiripaya (Stage III), Battaramulla, Sri Lanka
             </p>
             <p>
               <i className="bi bi-telephone-fill text-yellow-500 mr-2"></i>
-              +94 112 287 349 / 2 287 350 / 2 287 351
+              +94 112 877122 
             </p>
             <p>
               <i className="bi bi-printer-fill text-yellow-500 mr-2"></i>
-              +94 112 287 070
+              +94 112 887831
             </p>
             <p>
               <i className="bi bi-envelope-fill text-yellow-500 mr-2"></i>
-              wcasesecretary@sltnet.lk
+              ruraldevelopmentbureau@gmail.com
             </p>
           </div>
         </div>

@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
-import image1 from "../assets/product/image1.jpeg";
-import image2 from "../assets/product/image2.jpeg";
-import image3 from "../assets/product/image3.jpeg";
-import image4 from "../assets/product/image4.jpeg";
+import image1 from "../assets/product/imageai1.jpeg";
+import image2 from "../assets/product/imageai2.jpeg";
+import image3 from "../assets/product/imageai3.jpeg";
+import image4 from "../assets/product/imageai4.jpeg";
 
 // Product list
 const products = [
-  { name: "Dehydrated Product", image: image1 },
-  { name: "Coconut Shell Craft", image: image2 },
-  { name: "Kithul Tracal", image: image3 },
+  { name: "Coconut Shell Craft ", image: image1 },
+  { name: "Dehydrated Product", image: image2 },
+  { name: "Coconut Shell Craft", image: image3 },
   { name: "Japan Jabara Handbag", image: image4 },
   { name: "Dehydrated Product", image: image1 },
   { name: "Dehydrated Product", image: image2 },
@@ -33,7 +33,7 @@ const ImageCarousel = () => {
       {/* Image */}
       <div
         className="border-2 rounded-lg overflow-hidden flex items-center justify-center bg-black"
-        style={{ height: "400px", borderColor: "#9A3F3F" }}
+        style={{  width: "1200px" , height: "600px" }}
       >
         <img
           src={carouselImages[current]}
@@ -99,7 +99,7 @@ const ProductPage = () => {
     <div className="bg-white text-gray-800 min-h-screen px-6 py-12 space-y-16">
       {/* Product Section */}
       <section className="text-center space-y-6">
-        <h1 className="text-4xl font-bold text-center mb-6 font-serif text-[#9A3F3F]">
+        <h1 className="text-4xl font-bold text-center mb-6 font-serif text-[#F3931D]">
           Products
         </h1>
         <ImageCarousel />

@@ -8,7 +8,7 @@ const ContactUs = () => {
 
       <main className="max-w-6xl mx-auto px-6 py-12">
         {/* Intro Message */}
-        <h1 className="text-4xl font-bold text-center mb-6 font-serif text-[#9A3F3F]">Contact Us</h1>
+        <h1 className="text-4xl font-bold text-center mb-6 font-serif text-[#F3931D]">Contact Us</h1>
         <div className="bg-gray-100 border border-gray-300 rounded-md p-4 mb-8 text-center text-gray-700">
           If you have any query, suggestion or complaint, please reach out to us and we will get back to you soon.
         </div>
@@ -58,7 +58,7 @@ const ContactUs = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="bg-[#FFF8F6] p-20 rounded-lg shadow-md border-l-4 " style={{ borderColor: "#9A3F3F" }}>
+          <div className="bg-[#FFF8F6] p-20 rounded-lg shadow-md border-l-4 " style={{ borderColor: "#F3931D" }}>
             <h2 className="text-4xl font-bold   mb-8">Meet Us</h2>
             <div className="space-y-4 text-gray-700">
               <div>
