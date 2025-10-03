@@ -3,35 +3,29 @@ import React, { useState } from "react";
 const driedFishProjects = [
   {
     id: 1,
-    district: "Matara",
-    office: "Devinuwara",
-    project: "Umbalakada Processing & Packaging Center",
-    amount: "Rs. 32,000",
-    location: "Devinuwara",
-    mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.7250899323!2d80.5512099!3d5.9458831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae32ac41b43118b%3A0x19c40085f6da3f90!2sDevinuwara!5e0!3m2!1sen!2slk!4v1690000000030!5m2!1sen!2slk",
+    district: "Ampara",
+    office: "Uhana",
+    product: "fish and dried fish",
+    location: "Bandaradoowa",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.314248420939!2d81.4604659!3d7.4268175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae520c1595dddbf%3A0x25c2ef2f88d9dec!2sBandaradoowa!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
     showMore: "Click Here",
   },
   {
     id: 2,
-    district: "Hambantota",
-    office: "Tangalle",
-    project: "Dried Fish Storage & Distribution Unit",
-    amount: "Rs. 36,000",
-    location: "Tangalle",
-    mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.7250899323!2d80.7912099!3d6.0458831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae32ac41b43118b%3A0x19c40085f6da3f90!2sTangalle!5e0!3m2!1sen!2slk!4v1690000000018!5m2!1sen!2slk",
+    district: "Ampara",
+    office: "Karaithiw",
+    product: "Dried Fish",
+    location: "karaithiw 09",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.314248420939!2d81.7749383!3d7.2536504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae513ddc602ccdb%3A0x0000000000000000!2sKaraithivu%2009!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
     showMore: "Click Here",
   },
   {
-    id: 3,
-    district: "Jaffna",
-    office: "Point Pedro",
-    project: "Traditional Dried Fish Artisan Support",
-    amount: "Rs. 40,000",
-    location: "Point Pedro",
-    mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.7250899323!2d80.0162099!3d9.8258831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe5f6c6c6c6c6c%3A0x6c6c6c6c6c6c6c6c!2sPoint%20Pedro!5e0!3m2!1sen!2slk!4v1690000000040!5m2!1sen!2slk",
+    id: 4,
+    district: "Puttalam",
+    office: "Arachchikattuwa",
+    product: "Fish and dried frish",
+    location: "Karukupane ",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.314248420939!2d79.7555022!3d7.642867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2cb3d4f91bc0d%3A0x4a2c6cbc40efc9f5!2sKarukupane!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
     showMore: "Click Here",
   },
 ];
@@ -51,8 +45,7 @@ const UmbalakadaDriesFishPage = () => {
               <th className="px-4 py-2 border">No</th>
               <th className="px-4 py-2 border">District</th>
               <th className="px-4 py-2 border">Divisional Secretary Office</th>
-              <th className="px-4 py-2 border">Project</th>
-              <th className="px-4 py-2 border">Amount</th>
+              <th className="px-4 py-2 border">Product</th>
               <th className="px-4 py-2 border">Location</th>
               <th className="px-4 py-2 border">Show More</th>
             </tr>
@@ -67,8 +60,7 @@ const UmbalakadaDriesFishPage = () => {
                 <td className="px-4 py-2 border text-center">{item.id}</td>
                 <td className="px-4 py-2 border">{item.district}</td>
                 <td className="px-4 py-2 border">{item.office}</td>
-                <td className="px-4 py-2 border">{item.project}</td>
-                <td className="px-4 py-2 border">{item.amount}</td>
+                <td className="px-4 py-2 border">{item.product}</td>
                 <td className="px-4 py-2 border text-blue-600 underline">
                   {item.location}
                 </td>

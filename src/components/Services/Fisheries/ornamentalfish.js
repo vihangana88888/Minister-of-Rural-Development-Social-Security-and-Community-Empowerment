@@ -3,35 +3,48 @@ import React, { useState } from "react";
 const ornamentalFishProjects = [
   {
     id: 1,
-    district: "Gampaha",
-    office: "Kelaniya",
-    project: "Ornamental Fish Breeding & Training Center",
-    amount: "Rs. 30,000",
-    location: "Kelaniya",
-    mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.7250899323!2d79.9162099!3d6.9558831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2596c6c6c6c6c%3A0x6c6c6c6c6c6c6c6c!2sKelaniya!5e0!3m2!1sen!2slk!4v1690000000050!5m2!1sen!2slk",
+    district: "Kurunegla",
+    office: "Variyapola",
+    product: "Ornamental Fish Breeding & Training Center",
+    location: "Mamunuwa",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.314248420939!2d80.2362518!3d7.6458574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae32d11227a7507%3A0xc4be8a57987c6e46!2sMamunuwa!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
     showMore: "Click Here",
   },
   {
     id: 2,
-    district: "Kandy",
-    office: "Udunuwara",
-    project: "Aquarium Setup & Marketing Support",
-    amount: "Rs. 35,000",
-    location: "Udunuwara",
-    mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.7250899323!2d80.5762099!3d7.2958831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae32ac41b43118b%3A0x19c40085f6da3f90!2sUdunuwara!5e0!3m2!1sen!2slk!4v1690000000015!5m2!1sen!2slk",
+    district: "Kalutara",
+    office: "Panadura",
+    product: "Aquarium Setup & Marketing Support",
+    location: "697A South Thalpitiya, 7B Palliyamankada",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.314248420939!2d79.9174825!3d6.6843942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0000000000000000!2sSouth%20Thalpitiya%2C%207B%20Palliyamankada!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
     showMore: "Click Here",
   },
   {
     id: 3,
-    district: "Galle",
-    office: "Habaraduwa",
-    project: "Ornamental Fish Export Promotion",
-    amount: "Rs. 38,000",
-    location: "Habaraduwa",
-    mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.7250899323!2d80.2162099!3d6.0458831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae32ac41b43118b%3A0x19c40085f6da3f90!2sHabaraduwa!5e0!3m2!1sen!2slk!4v1690000000020!5m2!1sen!2slk",
+    district: "Kalutara",
+    office: "Madurawala",
+    product: "Ornamental fish food",
+    location: "Katuhena, Upper Karannagoda",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.314248420939!2d80.0582246!3d6.671784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0000000000000000!2sKatuhena%2C%20Upper%20Karannagoda!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+    showMore: "Click Here",
+  },
+  
+  {
+    id: 5,
+    district: "Polonnaruwa",
+    office: "Dibylagala",
+    product: "Fishing industry",
+    location: "240 Kandegama",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.314248420939!2d80.4158443!3d8.0713753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afc94597cef8fcb%3A0x923b446274cd3b8b!2sIpalogama!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+    showMore: "Click Here",
+  },
+  {
+    id: 6,
+    district: "Polonnaruwa",
+    office: "Dibylagala",
+    product: "Fishing industry",
+    location: "239 - Alawakumbura",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.314248420939!2d81.1631467!3d7.6964525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0000000000000000!2s239%20-%20Alawakumbura!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
     showMore: "Click Here",
   },
 ];
@@ -51,8 +64,7 @@ const OrnamentalFishPage = () => {
               <th className="px-4 py-2 border">No</th>
               <th className="px-4 py-2 border">District</th>
               <th className="px-4 py-2 border">Divisional Secretary Office</th>
-              <th className="px-4 py-2 border">Project</th>
-              <th className="px-4 py-2 border">Amount</th>
+              <th className="px-4 py-2 border">Product</th>
               <th className="px-4 py-2 border">Location</th>
               <th className="px-4 py-2 border">Show More</th>
             </tr>
@@ -67,8 +79,7 @@ const OrnamentalFishPage = () => {
                 <td className="px-4 py-2 border text-center">{item.id}</td>
                 <td className="px-4 py-2 border">{item.district}</td>
                 <td className="px-4 py-2 border">{item.office}</td>
-                <td className="px-4 py-2 border">{item.project}</td>
-                <td className="px-4 py-2 border">{item.amount}</td>
+                <td className="px-4 py-2 border">{item.product}</td>
                 <td className="px-4 py-2 border text-blue-600 underline">
                   {item.location}
                 </td>

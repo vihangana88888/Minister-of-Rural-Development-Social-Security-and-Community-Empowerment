@@ -3,32 +3,56 @@ import React, { useState } from "react";
 const mushroomProjects = [
   {
     id: 1,
-    district: "Kandy",
-    office: "Udunuwara",
-    project: "Mushroom Cultivation Training Program",
-    amount: "Rs. 22,000",
-    location: "Udunuwara",
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.7250899323!2d80.5762099!3d7.2958831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae32ac41b43118b%3A0x19c40085f6da3f90!2sUdunuwara!5e0!3m2!1sen!2slk!4v1690000000007!5m2!1sen!2slk",
+    district: "Mathale",
+    office: "Ukuwela",
+    product: "Mushroom production",
+    location: "Owilla Thenna, Thibbatuwawa",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.994684342757!2d80.5980205!3d8.022494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afcbd63a2611585%3A0x1c2c7866914ae80d!2sThibbatuwewa!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
     showMore: "Click Here",
   },
   {
     id: 2,
-    district: "Matale",
-    office: "Dambulla",
-    project: "Organic Mushroom Processing Unit",
-    amount: "Rs. 34,000",
-    location: "Dambulla",
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.7250899323!2d80.6512099!3d7.8724319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae522281e73e697%3A0xac30584dddae1156!2sDambulla!5e0!3m2!1sen!2slk!4v1690000000008!5m2!1sen!2slk",
+    district: "Ampara",
+    office: "Uhana",
+    product: "Mushroom",
+    location: "Bandaradoowa",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.314248420939!2d81.4604659!3d7.4268175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae520c1595dddbf%3A0x25c2ef2f88d9dec!2sBandaradoowa!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
     showMore: "Click Here",
   },
   {
     id: 3,
-    district: "Nuwara Eliya",
-    office: "Hanguranketha",
-    project: "Mushroom Packaging & Distribution",
-    amount: "Rs. 29,000",
-    location: "Hanguranketha",
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.7250899323!2d80.7512099!3d7.0224319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae522281e73e697%3A0xac30584dddae1156!2sHanguranketha!5e0!3m2!1sen!2slk!4v1690000000009!5m2!1sen!2slk",
+    district: "Kegalle",
+    office: "Aranayake",
+    product: "Mushroom",
+    location: "45C Pahinibeddara, Gavilipitiya Village",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.314248420939!2d80.2473567!3d7.2250915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae31a1102026723%3A0x233870b85415a271!2sNelundeniya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+    showMore: "Click Here",
+  },
+  {
+    id: 4,
+    district: "Monaragala",
+    office: "Wellawaya",
+    product: "Mushroom",
+    location: "Kotikambokka",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.314248420939!2d80.2473567!3d7.2250915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae31a1102026723%3A0x233870b85415a271!2sNelundeniya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+    showMore: "Click Here",
+  },
+  {
+    id: 5,
+    district: "Badulla",
+    office: "Ella",
+    product: "Mushroom",
+    location: "Millagama, Idamegama, Udu Kumbalwela",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.314248420939!2d81.0274744!3d6.8815647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4645572a706ab%3A0x4aa4f518f484c194!2sKumbalwela!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+    showMore: "Click Here",
+  },
+  {
+    id: 6,
+    district: "Polonnaruwa",
+    office: "Madirigiriya",
+    product: "Mushroom",
+    location: "124 Veheragala",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.314248420939!2d80.9516002!3d8.143382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afb65eaeea2c9ad%3A0xc1b1d51f3a30a57c!2sMedirigiriya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
     showMore: "Click Here",
   },
 ];
@@ -38,18 +62,17 @@ const MushroomPage = () => {
 
   return (
     <div className="min-h-screen bg-white px-6 py-10">
-      <h1 className="text-2xl font-bold text-[#2C3E50] mb-6">Mushroom Related Product</h1>
+      <h1 className="text-2xl font-bold text-[#2C3E50] mb-6">Mushroom Related Products</h1>
 
       {/* Table Section */}
       <div className="overflow-x-auto mb-10">
-        <table className="min-w-full border border-gray-300">
-          <thead className="bg-[#F3931D] text-white">
+      <table className="min-w-full border border-gray-300">
+          <thead className="bg-[#C78A3B] text-white">
             <tr>
               <th className="px-4 py-2 border">No</th>
               <th className="px-4 py-2 border">District</th>
               <th className="px-4 py-2 border">Divisional Secretary Office</th>
-              <th className="px-4 py-2 border">Project</th>
-              <th className="px-4 py-2 border">Amount</th>
+              <th className="px-4 py-2 border">Product</th>
               <th className="px-4 py-2 border">Location</th>
               <th className="px-4 py-2 border">Show More</th>
             </tr>
@@ -58,14 +81,13 @@ const MushroomPage = () => {
             {mushroomProjects.map((item) => (
               <tr
                 key={item.id}
-                className="hover:bg-[#FFF7E6] cursor-pointer"
+                className="hover:bg-[#FCECDD] cursor-pointer"
                 onClick={() => setSelectedMap(item.mapEmbed)}
               >
                 <td className="px-4 py-2 border text-center">{item.id}</td>
                 <td className="px-4 py-2 border">{item.district}</td>
                 <td className="px-4 py-2 border">{item.office}</td>
-                <td className="px-4 py-2 border">{item.project}</td>
-                <td className="px-4 py-2 border">{item.amount}</td>
+                <td className="px-4 py-2 border">{item.product}</td>
                 <td className="px-4 py-2 border text-blue-600 underline">
                   {item.location}
                 </td>

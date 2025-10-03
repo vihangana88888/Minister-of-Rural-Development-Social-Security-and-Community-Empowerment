@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom"; 
 
 
 // Import your images
@@ -40,39 +41,46 @@ const Home = () => {
           ))}
         </div>
   
-        {/* Overlay Boxes */}
-        <div className="absolute top-[600px] z-10 flex flex-col md:flex-row justify-center items-center gap-6 px-4 w-[900px]  mx-auto">
-        {[
-            {
-            title: "Rural Development Programme",
-            subtitle: "",
-            },
-            {
-            title: "Grama Shakthi Programme",
-            subtitle: "",
-            },
-            {
-            title: "Praja Shakthi Programme",
-            subtitle: "",
-            },
-            {
-                title: "Sawbagya Programme",
-                subtitle: "",
-                },
-        ].map((box, index) => (
-            <div
-            key={index}
-            className={`bg-white rounded-lg shadow-lg border-t-[6px] border-[#F3931D] h-[200px] w-[300px] flex flex-col items-center text-center hover:scale-105 transform transition-transform duration-300 slide-in-left`}
-            style={{ animationDelay: `${index * 0.3}s` }}
-            >
-            <div className="p-4">
-                <p className="text-lg font-semibold">{box.title}</p>
-                <p className="text-2xl font-bold">{box.subtitle}</p>
-            </div>
-        
-            </div>
-        ))}
-        </div>  
+
+
+{/* Overlay Boxes */}
+<div className="absolute top-[600px] z-10 flex flex-col md:flex-row justify-center items-center gap-6 px-4 w-[900px] mx-auto">
+  {[
+    {
+        title: "Rural Development Programme",
+        subtitle: "",
+        path: "/components/programme/Ruraldevelopment",
+      },
+      {
+        title: "Grama Shakthi Programme",
+        subtitle: "",
+        path: "/components/programme/Gramashakthi",
+      },
+      {
+        title: "Praja Shakthi Programme",
+        subtitle: "",
+        path: "/components/programme/Prajashakthi",
+      },
+      {
+        title: "Sawbagya Programme",
+        subtitle: "",
+        path: "/components/programme/Sawbagya",
+      },
+  ].map((box, index) => (
+    <Link
+      to={box.path}
+      key={index}
+      className="bg-white rounded-lg shadow-lg border-t-[6px] border-[#F3931D] h-[200px] w-[300px] flex flex-col items-center text-center hover:scale-105 transform transition-transform duration-300 slide-in-left"
+      style={{ animationDelay: `${index * 0.3}s` }}
+    >
+      <div className="p-4">
+        <p className="text-lg font-semibold">{box.title}</p>
+        <p className="text-2xl font-bold">{box.subtitle}</p>
+      </div>
+    </Link>
+  ))}
+</div>
+
       </main>
    
  
@@ -190,10 +198,10 @@ const Home = () => {
     </section>
 
 
-      {/* New Section Below Carousel */}
+      {/* Download Section Below Carousel */}
     <section className="bg-white py-16 px-6 md:px-20 text-center">
         <h2 className="text-3xl font-bold text-[#F3931D] mb-4 uppercase">
-          A Strong Household Economy
+          Download circulers, Guidelines and Formats
         </h2>
         <p className="text-sm uppercase text-gray-600 mb-2">
           576 Production Villages Based on Rural Resources
@@ -204,13 +212,76 @@ const Home = () => {
             National Policy Framework.
         </p>
         <a
-          href="/about-us#services"
+          href="/Download"
+          className="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
+        >
+          READ MORE →
+        </a>
+    </section>
+
+    <section className="bg-[#EEEEEE] py-16 px-6 md:px-20">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+            
+            {/* Left: Image */}
+            <div className="md:w-1/2">
+            <img
+                src={require("../assets/homepage/image 1.jpeg")} // ✅ Replace with your actual image path
+                alt="Pottery making in rural village"
+                className="w-full h-auto rounded-lg shadow-md object-cover"
+            />
+            </div>
+
+        {/* Right: Text Content */}
+        <div className="md:w-1/2 text-right">
+        <h2 className="text-3xl font-bold text-[#F3931D] mb-4 uppercase">
+            Contact Us
+        </h2>
+        <p className="text-sm uppercase text-gray-600 mb-2">
+            576 Production Villages Based on Rural Resources
+        </p>
+        <p className="text-lg text-gray-700 leading-relaxed mb-6">
+            The Saubagya Production Village Program was launched to promote home-based products, raise the income level of the rural community, uplift the rural economy, and support the "Vision of Prosperity and Splendour" National Policy Framework.
+        </p>
+        <a
+            href="/about-us#services"
+            className="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
+        >
+            READ MORE →
+        </a>
+        </div>
+
+        </div>
+    </section>
+
+
+      
+
+      {/* News Section Below Carousel */}
+    <section className="bg-white py-16 px-6 md:px-20 text-center">
+        <h2 className="text-3xl font-bold text-[#F3931D] mb-4 uppercase">
+          News
+        </h2>
+        <p className="text-sm uppercase text-gray-600 mb-2">
+          576 Production Villages Based on Rural Resources
+        </p>
+        <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-6">
+          The Saubagya Production Village Program was launched to promote home-based products, raise the income level of the rural community,
+           uplift the rural economy, and support the "Vision of Prosperity and Splendour"
+            National Policy Framework.
+        </p>
+        <a
+          href="/Download"
           className="inline-block bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition"
         >
           READ MORE →
         </a>
       </section>
 
+
+      
+
+
+  {/* Related Organizations section */}
       <section className="bg-[#EEEEEE] py-16 px-6 md:px-20">
         <h2 className="text-3xl font-bold text-center text-[#F3931D] mb-10 uppercase relative">
             <span className="px-4 bg-white z-10 relative">Related Organizations</span>

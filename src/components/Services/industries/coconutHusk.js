@@ -1,35 +1,38 @@
 import React, { useState } from "react";
 
-const seedProjects = [
+const coconutHuskProjects = [
   {
     id: 1,
-    district: "Badulla",
-    office: "Hali Ela, Bandarawela, Haputale, Haldummulla, Passara",
-    product: "Potato Seeds",
-    location: "Nayabeddawatte, Poonagalawatte, Dambetennawatte, Thangamalewatte, Udaweriyawatte, Gonamotawatte, Kanawerellawatte, Wewalewatte, Nawalawatte, Diyanagalawatte",
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.7250899323!2d80.6162099!3d8.1958831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae32ac41b43118b%3A0x19c40085f6da3f90!2sThirappane!5e0!3m2!1sen!2slk!4v1690000000010!5m2!1sen!2slk",
+    district: "Ampara",
+    office: "Uhana",
+    product: "Brooms,Rug",
+    location: "GamunuPura",
+    mapEmbed:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.314248420939!2d80.2159383!3d7.7576504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2fddc602ccdb%3A0xcc8a51875ff74a03!2sNikaweratiya!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
     showMore: "Click Here",
   },
   {
     id: 2,
-    district: "Polonnaruwa",
-    office: "Higurangoda",
-    product: "seed paddy",
-    location: "37 Rajaelagama",
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.314248420939!2d80.9038259!3d8.0387167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0000000000000000!2s37%20-%20Rajaelagama!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
+    district: "Puttalam",
+    office: "Wennappuwa",
+    product: "Coir ropes, brooms, rugs",
+    location: "Wennappuwa Coir Cluster",
+    mapEmbed:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.314248420939!2d79.9919143!3d7.309449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae392e07c554149%3A0x0000000000000000!2sWennappuwa!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
     showMore: "Click Here",
   },
   
 ];
 
-const SeedPage = () => {
-  const [selectedMap, setSelectedMap] = useState(seedProjects[0].mapEmbed);
+const CoconutHusk = () => {
+  const [selectedMap, setSelectedMap] = useState(coconutHuskProjects[0].mapEmbed);
 
   return (
     <div className="min-h-screen bg-white px-6 py-10">
-      <h1 className="text-2xl font-bold text-[#2C3E50] mb-6">Seed Related Product</h1>
+      <h1 className="text-2xl font-bold text-[#2C3E50] mb-6">
+        Coconut Husk Related Product
+      </h1>
 
-      {/* Table Section */}
       <div className="overflow-x-auto mb-10">
         <table className="min-w-full border border-gray-300">
           <thead className="bg-[#F3931D] text-white">
@@ -43,7 +46,7 @@ const SeedPage = () => {
             </tr>
           </thead>
           <tbody>
-            {seedProjects.map((item) => (
+            {coconutHuskProjects.map((item) => (
               <tr
                 key={item.id}
                 className="hover:bg-[#FFF7E6] cursor-pointer"
@@ -53,27 +56,22 @@ const SeedPage = () => {
                 <td className="px-4 py-2 border">{item.district}</td>
                 <td className="px-4 py-2 border">{item.office}</td>
                 <td className="px-4 py-2 border">{item.product}</td>
-                <td className="px-4 py-2 border text-blue-600 underline">
-                  {item.location}
-                </td>
-                <td className="px-4 py-2 border text-blue-600 underline">
-                  {item.showMore}
-                </td>
+                <td className="px-4 py-2 border text-blue-600 underline">{item.location}</td>
+                <td className="px-4 py-2 border text-blue-600 underline">{item.showMore}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
 
-      {/* Map Section */}
       <div className="w-full h-[400px] rounded-md overflow-hidden shadow-lg">
         <iframe
-          title="Seed Project Map"
+          title="Coconut Husk Project Map"
           src={selectedMap}
           width="100%"
           height="100%"
           style={{ border: 0 }}
-          allowFullScreen=""
+          allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
@@ -82,4 +80,4 @@ const SeedPage = () => {
   );
 };
 
-export default SeedPage;
+export default CoconutHusk;

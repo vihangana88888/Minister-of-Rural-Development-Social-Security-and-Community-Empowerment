@@ -15,7 +15,7 @@ const navItems = [
   },
   {
     label: "Services",
-    path: "",
+    path: '',
     mainCategories: [
       {
         label: "Agriculture",
@@ -27,9 +27,13 @@ const navItems = [
           { label: "Flowers and Ornamental Plants", path: "/services/agriculture/flowers" },
           { label: "Seed Product", path: "/services/agriculture/seed" },
           { label: "Fruit Related Product", path: "/services/agriculture/fruits" },
-          { label: "Mushroom Product", path: "/services/agriculture/mushroom" },
           { label: "Vegetable Value Addition", path: "/services/agriculture/vegetable" },
           { label: "Mushroom Product", path: "/services/agriculture/mushroom" },
+          { label: "Other Product" , path: "/services/agriculture/other"},
+          { label: "Tea Product" , path: "/services/agriculture/tea"},
+          { label: "Bulath Product" , path: "/services/agriculture/bulath"},
+          { label: "Cinnamon Product" , path: "/services/agriculture/cinnamon"} ,
+          { label: "Other Product" , path: "/services/agriculture/other"},
         ],
       },
       {
@@ -42,7 +46,7 @@ const navItems = [
           { label: "Wooden Items", path: "/services/industries/wooden" },
           { label: "Pooja Items", path: "/services/industries/pooja" },
           { label: "Sweet & Organic Foods", path: "/services/industries/sweet&foods" },
-          { label: "Other Special Related Product", path: "/services/industries/otherspecial" },
+          { label: "Coconut Husk Product", path: "/services/industries/coconutHusk" }
         ],
       },
       {
@@ -57,14 +61,14 @@ const navItems = [
         subItems: [
           { label: "Dairy Product", path: "/services/AnimalHusbandry/dairyproduct" },
           { label: "Egg", path: "/services/AnimalHusbandry/eggs" },
-          { label: "Mutton & Pork", path: "/services/AnimalHusbandry/muttonpork" },
+          { label: "Meats", path: "/services/AnimalHusbandry/meats" },
           { label: "Bee Honey", path: "/services/AnimalHusbandry/beehoney" },
         ],
       },
       {
-        label: "Services with Village",
+        label: "Infrastructure ",
         subItems: [
-          { label: "Service Related Villages", path: "/services/village/village" },
+          { label: "Developments", path: "/services/village/village" },
         ],
       },
     ],

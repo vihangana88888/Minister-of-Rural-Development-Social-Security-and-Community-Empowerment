@@ -13,6 +13,12 @@ import News from "./components/News";
 import Product from "./components/Products";
 import Download from "./components/Download.js";
 
+import Gramashakthi from "./components/Programme/Gramashakthi";
+import Prajashakthi from "./components/Programme/Prajashakthi";
+import Ruraldevelopment from "./components/Programme/Ruraldevelopment";
+import Sawbagya from "./components/Programme/Sawbagya";
+
+
 // Agriculture
 import Coconut from "./components/Services/agriculture/coconut";
 import Flowers from "./components/Services/agriculture/flowers";
@@ -23,6 +29,12 @@ import Seed from "./components/Services/agriculture/seed";
 import Spices from "./components/Services/agriculture/spices";
 import Vegetable from "./components/Services/agriculture/vegetable";
 import Mushroom from "./components/Services/agriculture/mushroom";
+import Tea from "./components/Services/agriculture/tea";
+import Cinnamon from "./components/Services/agriculture/cinnamon";
+import Bulath from "./components/Services/agriculture/bulath";
+import Other from "./components/Services/agriculture/Other.js";
+
+
 
 // Industries
 import Cane from "./components/Services/industries/cane";
@@ -34,7 +46,7 @@ import IronGold from "./components/Services/industries/iron&gold";
 import Pooja from "./components/Services/industries/pooja";
 import SweetFoods from "./components/Services/industries/sweet&foods";
 import Wooden from "./components/Services/industries/wooden";
-import OtherSpecial from "./components/Services/industries/otherspecial";
+import CoconutHusk from './components/Services/industries/coconutHusk.js';
 
 // Fisheries
 import OrnamentalFish from "./components/Services/Fisheries/ornamentalfish";
@@ -44,7 +56,7 @@ import UmbalakadaDries from "./components/Services/Fisheries/umbalakada&driesfis
 import BeeHoney from "./components/Services/AnimalHusbandry/beehoney";
 import DairyProduct from "./components/Services/AnimalHusbandry/dairyproduct";
 import Eggs from "./components/Services/AnimalHusbandry/eggs";
-import MuttonPork from "./components/Services/AnimalHusbandry/muttonpork";
+import Meats from "./components/Services/AnimalHusbandry/Meats.js";
 
 // Village
 import Village from "./components/Services/village/village";
@@ -62,6 +74,11 @@ function App() {
         <Route path="/Product" element={<Product />} />
         <Route path="/Download" element={<Download/>} />
 
+        <Route path="/components/programme/Gramashakthi" element={<Gramashakthi />} />
+        <Route path="/components/programme/Prajashakthi" element={<Prajashakthi />} />
+        <Route path="/components/programme/Sawbagya" element={<Sawbagya />} />
+        <Route path="/components/programme/Ruraldevelopment" element={<Ruraldevelopment />} />
+
         {/* Agriculture Routes */}
         <Route path="/services/agriculture/coconut" element={<Coconut />} />
         <Route path="/services/agriculture/flowers" element={<Flowers />} />
@@ -72,6 +89,11 @@ function App() {
         <Route path="/services/agriculture/spices" element={<Spices />} />
         <Route path="/services/agriculture/vegetable" element={<Vegetable />} />
         <Route path="/services/agriculture/mushroom" element={<Mushroom />} />
+        <Route path="/services/agriculture/tea" element={<Tea/>} />
+        <Route path="/services/agriculture/cinnamon" element={<Cinnamon />} />
+        <Route path="/services/agriculture/bulath" element={<Bulath />} />
+        <Route path="/services/agriculture/other" element={<Other/>} />
+
 
         {/* Industries Routes */}
         <Route path="/services/industries/cane" element={<Cane />} />
@@ -83,7 +105,9 @@ function App() {
         <Route path="/services/industries/pooja" element={<Pooja />} />
         <Route path="/services/industries/sweet&foods" element={<SweetFoods />} />
         <Route path="/services/industries/wooden" element={<Wooden />} />
-        <Route path="/services/industries/otherspecial" element={<OtherSpecial />} />
+        <Route path="/services/industries/coconutHusk" element={<CoconutHusk />} />
+
+
 
         {/* Fisheries Routes */}
         <Route path="/services/fisheries/ornamentalfish" element={<OrnamentalFish />} />
@@ -93,7 +117,7 @@ function App() {
         <Route path="/services/AnimalHusbandry/beehoney" element={<BeeHoney />} />
         <Route path="/services/AnimalHusbandry/dairyproduct" element={<DairyProduct />} />
         <Route path="/services/AnimalHusbandry/eggs" element={<Eggs />} />
-        <Route path="/services/AnimalHusbandry/muttonpork" element={<MuttonPork />} />
+        <Route path="/services/AnimalHusbandry/Meats" element={<Meats />} />
 
         {/* Village Route */}
         <Route path="/services/village/village" element={<Village />} />

@@ -100,7 +100,7 @@ const ProductPage = () => {
       {/* Product Section */}
       <section className="text-center space-y-6">
         <h1 className="text-4xl font-bold text-center mb-6 font-serif text-[#F3931D]">
-          Products
+          Products<br></br>
         </h1>
         <ImageCarousel />
         <p className="text-sm max-w-3xl mx-auto leading-relaxed">
