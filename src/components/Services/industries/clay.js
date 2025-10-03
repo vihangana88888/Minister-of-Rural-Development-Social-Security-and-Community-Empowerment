@@ -40,7 +40,7 @@ const ClayPage = () => {
       {/* Table Section */}
       <div className="overflow-x-auto mb-10">
         <table className="min-w-full border border-gray-300">
-          <thead className="bg-[#F3931D] text-white">
+          <thead className="bg-[#4B352A] text-white">
             <tr>
               <th className="px-4 py-2 border">No</th>
               <th className="px-4 py-2 border">District</th>
@@ -54,7 +54,7 @@ const ClayPage = () => {
             {clayProjects.map((item) => (
               <tr
                 key={item.id}
-                className="hover:bg-[#FFF7E6] cursor-pointer"
+                className="hover:bg-[#F2F2F2] cursor-pointer"
                 onClick={() => setSelectedMap(item.mapEmbed)}
               >
                 <td className="px-4 py-2 border text-center">{item.id}</td>

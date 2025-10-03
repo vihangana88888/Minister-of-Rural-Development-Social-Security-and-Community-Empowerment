@@ -6,7 +6,7 @@ import image4 from "../assets/product/imageai4.jpeg";
 
 // Product list
 const products = [
-  { name: "Coconut Shell Craft ", image: image1 },
+  { name: "Coconut Related ", image: image1 },
   { name: "Dehydrated Product", image: image2 },
   { name: "Coconut Shell Craft", image: image3 },
   { name: "Japan Jabara Handbag", image: image4 },
