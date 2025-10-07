@@ -30,7 +30,7 @@ const ImageCarousel = () => {
 
   return (
     <div className="relative w-full max-w-6xl mx-auto">
-      {/* Image */}
+      {/* Images */}
       <div
         className="border-2 rounded-lg overflow-hidden flex items-center justify-center bg-black"
         style={{  width: "1200px" , height: "600px" }}
