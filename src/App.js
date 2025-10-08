@@ -106,6 +106,7 @@ function App() {
         <Route path="/services/industries/sweet&foods" element={<SweetFoods />} />
         <Route path="/services/industries/wooden" element={<Wooden />} />
         <Route path="/services/industries/coconutHusk" element={<CoconutHusk />} />
+        
 
 
 

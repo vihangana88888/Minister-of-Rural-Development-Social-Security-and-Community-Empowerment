@@ -46,7 +46,9 @@ const navItems = [
           { label: "Wooden Items", path: "/services/industries/wooden" },
           { label: "Pooja Items", path: "/services/industries/pooja" },
           { label: "Sweet & Organic Foods", path: "/services/industries/sweet&foods" },
-          { label: "Coconut Husk Product", path: "/services/industries/coconutHusk" }
+          { label: "Coconut Husk Product", path: "/services/industries/coconutHusk" },
+          { label: "Hand Craft Product", path: "/services/industries/handcraft"},
+          { label: "Iron & Gold Product", path: "/services/industries/iron&gold"}
         ],
       },
       {
