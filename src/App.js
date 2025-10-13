@@ -59,7 +59,14 @@ import Eggs from "./components/Services/AnimalHusbandry/eggs";
 import Meats from "./components/Services/AnimalHusbandry/Meats.js";
 
 // Village
-import Village from "./components/Services/village/village";
+import Roaddevelopment from "./components/Services/village/roaddevelopment";
+import Sanitary from "./components/Services/village/sanitaryfacilities";
+import Tourism from "./components/Services/village/tourism";
+import Otherservices from "./components/Services/village/otherservices";
+
+
+
+
 
 function App() {
   return (
@@ -106,7 +113,7 @@ function App() {
         <Route path="/services/industries/sweet&foods" element={<SweetFoods />} />
         <Route path="/services/industries/wooden" element={<Wooden />} />
         <Route path="/services/industries/coconutHusk" element={<CoconutHusk />} />
-        
+
 
 
 
@@ -121,7 +128,12 @@ function App() {
         <Route path="/services/AnimalHusbandry/Meats" element={<Meats />} />
 
         {/* Village Route */}
-        <Route path="/services/village/village" element={<Village />} />
+        <Route path="/services/village/roaddevelopment" element={<Roaddevelopment />} />
+        <Route path="/services/village/sanitaryfacilities" element={<Sanitary />} />
+        <Route path="/services/village/tourism" element={<Tourism />} />
+        <Route path="/services/village/otherservices" element={<Otherservices />} />
+
+
       </Routes>
       <Footer />
     </Router>

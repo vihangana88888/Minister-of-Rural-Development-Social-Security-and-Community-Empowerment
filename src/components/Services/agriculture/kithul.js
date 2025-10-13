@@ -10,7 +10,8 @@ const kithulProjects = [
     mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.314248420939!2d80.1460593!3d7.0465585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3010ecda58481%3A0x64cf85d5a0ef8ea!2sMadakubura%20Road!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
     buyPath: "/buy/dambulla-flowers",
     description:
-      "This zone supports orchid and anthurium growers with export certification, packaging, and air freight logistics. It connects rural producers to global markets.",  },  
+      "This zone supports orchid and anthurium growers with export certification, packaging, and air freight logistics. It connects rural producers to global markets.", 
+  },  
   {
     id: 2,
     district: "Kalutara",

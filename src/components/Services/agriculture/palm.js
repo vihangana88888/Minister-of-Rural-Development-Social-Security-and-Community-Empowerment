@@ -8,9 +8,7 @@ const palmProjects = [
     product: "Palm-based products such as jam, yogurt.",
     location: "Thalaimannar",
     mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.314248420939!2d79.7232637!3d9.0862706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe0b26d2544431%3A0x67c66e6a1ca9170e!2sTalaimannar!5e0!3m2!1sen!2slk!4v1695980000000!5m2!1sen!2slk",
-    buyPath: "/buy/dambulla-flowers",
-    description:
-      "This zone supports orchid and anthurium growers with export certification, packaging, and air freight logistics. It connects rural producers to global markets.",   },
+   },
   {
     id: 2,
     district: "Jaffna",
